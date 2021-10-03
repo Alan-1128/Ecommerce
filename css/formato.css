@@ -1,0 +1,420 @@
+/* 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+html {
+    font-size: 62.5%; 
+}
+body {
+    background-color: black;
+    font-size: 1.5em; 
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222; 
+}
+
+
+/* --------------------------------------------------CARRITO */
+header {
+    padding: 20px 0 0 0;
+    background: linear-gradient(#000000de, #000000);
+    text-align: center;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.562);
+    min-width: 350px;
+  }
+  @media (min-width: 750px) {
+    header {
+        text-align: left;
+    z-index: 19999999;
+
+    }
+  }
+  
+  .imgTabla{
+    width: 90px;
+  }
+
+  @media (max-width: 430px) {
+    .imgTabla {
+      width: 60px;
+    }
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; 
+    z-index: 19999999;
+
+  }
+  .column,
+  .columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box; }
+  
+    @media (min-width: 400px) {
+    .container {
+      width: 85%;
+      padding: 0; }
+  }
+  
+  @media (min-width: 550px) {
+    .container {
+      width: 80%; }
+    .column,
+    .columns {
+      margin-left: 4%; }
+    .column:first-child,
+    .columns:first-child {
+      margin-left: 0; }
+  
+    .two.columns                    { width: 13.3333333333%; }
+    .four.columns                   { width: 30.6666666667%; }
+  }
+  .button {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+    box-sizing: border-box; }
+  
+  ul {
+    list-style: circle inside;
+    list-style: none;
+   }
+  ol {
+    list-style: decimal inside; }
+  ol, ul {
+    padding-left: 0;
+    margin-top: 0; }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin: 1.5rem 0 1.5rem 3rem;
+    font-size: 90%; }
+  li {
+    margin-bottom: 1rem; }
+  
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    color: white;
+    border-bottom: 1px solid white; }
+  th:first-child,
+  td:first-child {
+    padding-left: 0; }
+  th:last-child,
+  td:last-child {
+    padding-right: 0; }
+  
+  .u-full-width {
+    width: 100%;
+    min-width: 200px;
+    box-sizing: border-box; 
+  }
+  
+  .u-pull-right {
+    float: right; 
+  }
+  .u-pull-left {
+    float: left; 
+  }
+  
+  .container:after,
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+  .borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .submenu {
+    position: relative;
+  }
+  .submenu #carrito{
+    display: none;
+  }
+  .submenu:hover #carrito{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+  
+    top:100%;
+    z-index: 1;
+    background-color: #000000de;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 100px;
+    z-index: 2000;
+  }
+
+
+
+/* --------------------------------------------------FONDO NEGRO AMARILLO */
+
+  .prueba{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    min-width: 30px;
+    margin: 0 0 90px 0;
+  }
+  .fondo{
+    position: absolute;
+    width: 100%;
+    min-height: 85%;
+    background-color: #b6b602;
+    min-width: 350px;
+  }
+ 
+  .fondo2{
+    position: absolute;
+    z-index: 1000;
+    left: -12%;
+    top: 0;
+    bottom: 0;
+    width: 57%;
+    min-width: 170px;
+    min-height: 110%;
+    transform: skewX(-16deg);
+    background-color: black;
+
+  }
+
+@media (max-width: 740px) {
+    .fondo2 {
+      left: -25%;
+  }
+}
+
+.pruebaP{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    /* background-color: red; */
+    background-color: transparent;
+    min-width: 350px;
+    /* z-index: 999999999; */
+    z-index: 1500;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 0 0 90px 0;
+    
+  }
+
+  .pruebaP > div{
+    align-self: center;
+    max-width: 80%;
+    margin: 0 0 20px 0;
+  }
+  .tCont{
+    color: white;
+    font-size: 450%;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    margin: 0;
+  }
+  .pCont{
+    color: white;
+    font-size: 150%;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+
+  }
+
+  @media (max-width: 585px) {
+    .pruebaP > div {
+    max-width: 90%;
+  }
+}
+@media (max-width: 585px) {
+  .pCont {
+    margin: 0;
+}
+}
+
+/* --------------------------------------------------PARTICLES*/
+
+  #particles-js {
+    height: 100vh; 
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  .contenedor {
+      position: relative;
+      z-index: 1999;
+  }
+
+
+/* --------------------------------------------------FICHAS DEL CURSO */
+
+.flex-container__principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+
+}
+@media (max-width: 350px) {
+  .flex-container__principal {
+      min-width: 350px;
+  }
+}
+.flex-container{
+    margin: 1%;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 9px #0000007a ;
+    background: rgba(255, 255, 255, 0.082);
+    padding: 10px;
+    margin: 10px;
+    max-width: 250px;
+    /* min-width: 200px; */
+}
+/* @media (max-width: 300px) {
+  .flex-container {
+      min-width: 300px;
+
+  }
+} */
+.form{
+    min-width: 240px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+.form__input{
+    min-width: 70%;   
+   text-align: center;
+}
+div.form > h4{
+    margin: 18px 0px 18px 0px;
+    font-size: 20px;
+}
+div.form > p .nombre {
+    margin: 0px;
+    padding: 10px;
+}
+div.form > .precio  {
+    text-decoration: line-through;
+    min-width: 0%;   
+    text-align: start;
+    font-size: 16px;
+}
+.form .span {
+    text-decoration: none;
+    text-align: end;
+    font-weight: 40;
+    font-size: 22px;
+    margin: 0px 0px 0px 0px;
+}
+div.form > img {
+    min-width: 60%;
+    margin: 0% 30%;
+}
+div.form > a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background: #b6b6027e;
+    padding: 10px 0px;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 8px;
+    margin: 10px 0px 8px 0px;
+}
+div.form > a:hover{
+    background: #696901;
+}
+.form-img{
+    min-width: 240px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-img > img{
+    width: 100%;
+}
+
+
+/* --------------------------------------------------PIE DE PAGINA */
+
+.footer {
+    margin-top: 40px;
+    padding-top: 40px;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 19999999;
+    border-top: 4px double #b6b602;
+    min-width: 350px;
+}
+.footer .menu{
+    min-width: 20px;
+    margin: 0px 25px 15px 15%;
+
+}
+.footer .menu a{
+    display: block;
+    padding: 0px 0px 15px ;
+    text-decoration: none;
+    color: white;
+}
+.footer .menu a:hover{
+    text-decoration: underline;
+    color: #b6b602;
+}
+/* --------------------------------------------------PIE DE PAGINA */
